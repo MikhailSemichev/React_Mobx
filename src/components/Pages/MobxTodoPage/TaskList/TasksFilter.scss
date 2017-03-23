@@ -1,0 +1,15 @@
+.tasks-filter {
+    display: flex;
+    align-items: center;
+
+    &__done {
+        width: 150px;
+    }
+
+    &__text {
+        width: 100px;
+        & > div {
+            width: 100% !important;
+        }
+    }
+}

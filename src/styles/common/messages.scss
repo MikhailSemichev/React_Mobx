@@ -1,0 +1,7 @@
+@import "./../references/_references";
+
+.has-error {
+	.form-text {
+		color: $c-error-text;
+	}
+}

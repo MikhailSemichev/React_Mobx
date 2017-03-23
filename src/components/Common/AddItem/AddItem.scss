@@ -1,0 +1,7 @@
+.add-item {
+	display: flex;
+	align-items: center;
+	&__input {
+		flex:1;
+	}
+}

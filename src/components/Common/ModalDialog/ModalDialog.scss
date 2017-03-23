@@ -1,0 +1,43 @@
+@import "./../../../styles/references/references";
+
+.modal-dialog-container {
+	pointer-events: none;
+
+	@mixin modal-header($c-bg, $c-text) {
+		background-color: $c-bg;
+		color: $c-text;
+
+		.close, .close:hover {
+			color: $c-text;
+		}
+
+		.close {
+			opacity: 0.7;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+
+	&.modal {
+		display: block; // necessary to override default bootstrap styles
+
+		&-info {
+			.modal-header {
+				@include modal-header($c-modal-info-bg, $c-modal-info-text);
+			}
+		}
+
+		&-error {
+			.modal-header {
+				@include modal-header($c-modal-error-bg, $c-modal-error-text);
+			}
+		}
+	}
+
+	.modal-dialog {
+		pointer-events: auto;
+	}
+}
+

@@ -1,0 +1,19 @@
+.task-list {
+	.task-top-panel {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10px;
+	}
+	.task-add-item {
+		width: 250px;
+	}
+}
+
+.task-item {
+	display: flex;
+	padding: 10px 0;
+	align-items: center;
+	&__text {
+		flex:1;
+	}
+}

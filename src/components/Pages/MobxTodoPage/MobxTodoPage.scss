@@ -1,0 +1,28 @@
+.task-list-page {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .progress-panel {
+        padding: 10px;
+    }
+
+    .main-panel {
+        flex:1;
+        display: flex;
+        align-items: stretch;
+
+        .category-tree-panel {
+            width: 300px;
+            padding: 10px;
+            overflow-y: auto;
+            flex-shrink: 0;
+        }
+
+        .task-list-panel {
+            flex: 1;
+            padding: 10px;
+            margin-left: 50px;
+        }
+    }
+}
